@@ -7,45 +7,49 @@
 This diagram shows the dynamic flow of activities when a student applies for leave.
 
 ```mermaid
-activityDiagram
-    start
-    :Student logs into portal;
-    :Student fills application form;
-    if (Leave Type == 'Medical'?) then (Yes)
-        :Enforce Document Upload;
-        :Student uploads file;
-    else (No)
-    endif
-    :Student submits application;
-    :System validates data;
-    if (Validation Pass?) then (Yes)
-        :Save to Database as 'Pending Faculty';
-        :Send Email to Faculty;
-    else (No)
-        :Show Error Message;
-        stop
-    endif
+flowchart TD
+    Start((Start)) --> Login[Student logs into portal]
+    Login --> Fill[Student fills application form]
+    Fill --> CheckMed{Leave Type == 'Medical'?}
     
-    :Faculty reviews application;
-    if (Faculty approves?) then (Yes)
-        if (Leave Duration > 3 days?) then (Yes)
-            :Update status to 'Pending HOD';
-            :Send Email to HOD;
-            :HOD reviews application;
-            if (HOD approves?) then (Yes)
-                :Update status to 'Approved';
-            else (No)
-                :Update status to 'Rejected';
-            endif
-        else (No)
-            :Update status to 'Approved';
-        endif
-    else (No)
-        :Update status to 'Rejected';
-    endif
+    CheckMed -- Yes --> Enforce[Enforce Document Upload]
+    Enforce --> Upload[Student uploads file]
+    Upload --> Submit
     
-    :Send Final Email to Student;
-    stop
+    CheckMed -- No --> Submit[Student submits application]
+    
+    Submit --> Validate[System validates data]
+    Validate --> Pass{Validation Pass?}
+    
+    Pass -- No --> Error[Show Error Message]
+    Error --> Stop1((Stop))
+    
+    Pass -- Yes --> Save[Save to Database as 'Pending Faculty']
+    Save --> EmailFac[Send Email to Faculty]
+    EmailFac --> Review[Faculty reviews application]
+    
+    Review --> FacApprove{Faculty approves?}
+    
+    FacApprove -- No --> FacReject[Update status to 'Rejected']
+    FacReject --> FinalEmail
+    
+    FacApprove -- Yes --> Duration{Leave Duration > 3 days?}
+    
+    Duration -- No --> FacApproveStatus[Update status to 'Approved']
+    FacApproveStatus --> FinalEmail
+    
+    Duration -- Yes --> PendHOD[Update status to 'Pending HOD']
+    PendHOD --> EmailHOD[Send Email to HOD]
+    EmailHOD --> HODReview[HOD reviews application]
+    HODReview --> HODApprove{HOD approves?}
+    
+    HODApprove -- Yes --> HODApproveStatus[Update status to 'Approved']
+    HODApproveStatus --> FinalEmail
+    
+    HODApprove -- No --> HODReject[Update status to 'Rejected']
+    HODReject --> FinalEmail
+    
+    FinalEmail[Send Final Email to Student] --> Stop2((Stop))
 ```
 
 ## 3. Sequence Diagram

@@ -48,7 +48,7 @@
 | Attachment (Mandatory for Medical):                         |
 | [ Choose File ] No file chosen  (Max 5MB PDF/JPG)           |
 |                                                             |
-|                      [ Cancel ] [ Submit Request ]          |
+|                 [ Cancel ] [ Submit Request ]               |
 +-------------------------------------------------------------+
 ```
 

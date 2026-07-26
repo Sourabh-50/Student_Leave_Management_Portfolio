@@ -1,13 +1,13 @@
 # Business Process Improvement: Student Leave Management System (SLMS)
 
-## 📌 Project Overview
+##  Project Overview
 This repository contains a comprehensive **Business Analysis Portfolio Project** detailing the transition of a university's legacy, paper-based student leave process to a fully automated digital workflow. 
 
 It showcases end-to-end Business Analysis skills, from initial requirement gathering and stakeholder management to Agile execution and UI wireframing.
 
 ---
 
-## 🚨 Business Problem
+##  Business Problem
 The educational institution previously relied on manual paper forms for leave approvals. This resulted in:
 *   **Slow Turnaround Time:** Approvals took 3-5 days as students physically hunted down faculty members.
 *   **Data Loss & Errors:** Paper forms were frequently lost, and manual entry into the ledger caused attendance inaccuracies.
@@ -16,7 +16,7 @@ The educational institution previously relied on manual paper forms for leave ap
 
 ---
 
-## 🎯 Project Objectives
+##  Project Objectives
 1.  **Digitization:** Convert 100% of paper applications to a web-based portal.
 2.  **Efficiency:** Reduce approval turnaround time from 72+ hours to under 24 hours.
 3.  **Automation:** Eliminate manual data entry for the Administration team.
@@ -24,7 +24,7 @@ The educational institution previously relied on manual paper forms for leave ap
 
 ---
 
-## 📁 Artifacts & Folder Structure
+##  Artifacts & Folder Structure
 This repository acts as a centralized knowledge base, mimicking a real-world Confluence/SharePoint setup.
 
 *   `01_Executive_Summary.md` - High-level overview and expected ROI.
@@ -55,7 +55,7 @@ This repository acts as a centralized knowledge base, mimicking a real-world Con
 
 ---
 
-## 🛠️ Tools & Technologies Used (Simulated)
+##  Tools & Technologies Used (Simulated)
 *   **Documentation & Planning:** Jira, Confluence, Microsoft Word, Excel
 *   **Diagramming:** Draw.io, Lucidchart, Mermaid.js
 *   **Wireframing:** Figma, Balsamiq
@@ -63,7 +63,7 @@ This repository acts as a centralized knowledge base, mimicking a real-world Con
 
 ---
 
-## 💡 Skills Demonstrated
+##  Skills Demonstrated
 *   Requirement Elicitation & Documentation (BRD, FRD, SRS)
 *   Process Modeling (BPMN, UML, Swimlane)
 *   Agile Product Management (User Stories, Backlog Grooming)
@@ -73,10 +73,5 @@ This repository acts as a centralized knowledge base, mimicking a real-world Con
 
 ---
 
-## 🖼️ Screenshots Placeholder
-*(In a real GitHub repo, PNG exports of the Mermaid diagrams and Figma wireframes would be displayed here).*
-
----
-
-## 📜 License
+##  License
 This is a portfolio project created for educational and interview-preparation purposes. It is open for anyone to review.

@@ -3,23 +3,27 @@
 ## 1. Use Case Diagram (Mermaid)
 
 ```mermaid
-usecaseDiagram
-    actor Student as "Student"
-    actor Faculty as "Faculty"
-    actor HOD as "HOD"
-    actor Admin as "Admin"
+flowchart LR
+    %% Actors
+    Student([Student])
+    Faculty([Faculty])
+    HOD([HOD])
+    Admin([Admin])
 
-    package "Student Leave Management System" {
-        usecase UC1 as "Login (SSO)"
-        usecase UC2 as "Submit Leave Request"
-        usecase UC3 as "Upload Medical Certificate"
-        usecase UC4 as "Cancel Request"
-        usecase UC5 as "Review & Approve Leave"
-        usecase UC6 as "Reject Leave"
-        usecase UC7 as "View Department Analytics"
-        usecase UC8 as "Export Master Report"
-    }
+    %% Use Cases
+    subgraph System ["Student Leave Management System"]
+        direction TB
+        UC1([Login SSO])
+        UC2([Submit Leave Request])
+        UC3([Upload Medical Certificate])
+        UC4([Cancel Request])
+        UC5([Review & Approve Leave])
+        UC6([Reject Leave])
+        UC7([View Department Analytics])
+        UC8([Export Master Report])
+    end
 
+    %% Connections
     Student --> UC1
     Student --> UC2
     Student --> UC3

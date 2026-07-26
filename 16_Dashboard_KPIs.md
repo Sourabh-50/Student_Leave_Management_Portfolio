@@ -38,9 +38,9 @@ The Admin and HOD dashboards are critical for monitoring system health and ident
 ```text
 [ ADMIN DASHBOARD ]
 
-+----------------+ +----------------+ +----------------+ +----------------+
-| PENDING: 8     | | APPROVED: 145  | | REJECTED: 12   | | AVG TAT: 18hrs |
-+----------------+ +----------------+ +----------------+ +----------------+
++----------------+    +----------------+    +----------------+    +----------------+
+| PENDING: 8     |    | APPROVED: 145  |    | REJECTED: 12   |    | AVG TAT: 18hrs |
++----------------+    +----------------+    +----------------+    +----------------+
 
 [ Leave Types (Pie Chart) ]       [ Monthly Trend (Line Chart) ]
    ( ) Medical: 45%                    ^
@@ -49,6 +49,7 @@ The Admin and HOD dashboards are critical for monitoring system health and ident
                                        +-----------> (Time)
 
 [ Department-wise Statistics (Bar Chart) ]
+
 |   _
 |  | |   _
 |  | |  | |   _

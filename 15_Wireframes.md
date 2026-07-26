@@ -7,7 +7,7 @@
 
 ```text
 +-----------------------------------------------------------------------------+
-|  [Logo] SLMS Portal                  Welcome, Rahul Sharma (Student) [Logout] |
+|  [Logo] SLMS Portal                Welcome, Rahul Sharma (Student) [Logout] |
 +-----------------------------------------------------------------------------+
 |  +---------------------------+  +-----------------------------------------+ |
 |  | MENU                      |  | MY LEAVE SUMMARY                        | |
@@ -57,7 +57,7 @@
 
 ```text
 +-----------------------------------------------------------------------------+
-|  [Logo] SLMS Portal                  Welcome, Prof. Desai (Faculty)  [Logout] |
+|  [Logo] SLMS Portal                Welcome, Prof. Desai (Faculty)  [Logout] |
 +-----------------------------------------------------------------------------+
 |                                                                             |
 |  PENDING APPROVALS (3)                                                      |
@@ -94,6 +94,6 @@
 | Approver Comments (Required if rejecting):                  |
 | [ ......................................................]   |
 |                                                             |
-|                      [ REJECT ] [ APPROVE ]                 |
+|                  [ REJECT ] [ APPROVE ]                     |
 +-------------------------------------------------------------+
 ```
